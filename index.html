@@ -25,6 +25,8 @@
         body {
             font-family: 'Squartiqa4F', sans-serif;
             transition: background-color 0.3s, color 0.3s; /* for smooth transitions */
+            background-color: #48FF00;
+            color: rgb(0,0,0);
         }
 
         header {
@@ -32,19 +34,10 @@
             justify-content: space-between;
             align-items: center;
             padding: 1em 2em;
-        }
-
-        /* Light Mode as default */
-        body {
-            background-color: #48FF00;
-            color: rgb(0,0,0);
-        }
-
-        header {
             background-color: #48FF00;
         }
 
-        /* Override with Dark Mode if user prefers that */
+        /* Dark mode preference */
         @media (prefers-color-scheme: dark) {
             body {
                 background-color: rgb(0,0,0);
@@ -75,10 +68,6 @@
             text-decoration: none;
             font-size: 1.2em;
             transition: color 0.3s ease;
-        }
-
-        /* Color links based on the theme */
-        nav a {
             color: rgb(0,0,0);
         }
 
